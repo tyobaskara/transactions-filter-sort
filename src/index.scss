@@ -1,10 +1,11 @@
 @import './styles/colors.scss';
+@import './styles/fonts.scss';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: latoregular;
   border: 0;
   outline: 0;
 }
