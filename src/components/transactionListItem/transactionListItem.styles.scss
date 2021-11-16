@@ -1,0 +1,71 @@
+@import '../../styles/colors.scss';
+
+.transactionListItemWrapper {
+  border-radius: 7px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+
+  &.SUCCESS {
+    background-color: $green;
+  }
+
+  &.PENDING {
+    background-color: $orange;
+  }
+
+  .content {
+    background-color: white;
+    border-radius: 0 7px 7px 0;
+    padding: 20px;
+    position: relative;
+
+    p, span {
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+
+  .originDestination {
+    span {
+      font-weight: bold;
+    }
+    i {
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 15px;
+    }
+  }
+
+  .beneficiaryName {
+    text-transform: uppercase;
+  }
+
+  .amountAndDate {
+    i {
+      display: inline-block;
+      font-size: 8px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+  }
+
+  .status {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 768px) {
+      position: initial;
+      right: initial;
+      top: initial;
+      transform: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+}

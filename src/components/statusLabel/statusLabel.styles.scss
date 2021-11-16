@@ -1,0 +1,17 @@
+@import '../../styles/colors.scss';
+
+.status {
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 20px;
+
+  &--success {
+    background: $green;
+    color: white;
+  }
+
+  &--pending {
+    border: 2px solid $orange;
+  }
+}

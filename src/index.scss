@@ -1,0 +1,72 @@
+@import './styles/colors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background-color: $main-background;
+}
+
+.bold-orange {
+  color: $orange;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0 15px;
+  @media screen and (min-width: 700px) {
+    width: 700px;
+    margin: auto;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.btn-orange {
+    border: 1px solid $orange;
+    color: $orange;
+  }
+}

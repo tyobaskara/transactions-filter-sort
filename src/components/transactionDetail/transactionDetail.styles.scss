@@ -1,0 +1,51 @@
+@import '../../styles/colors.scss';
+
+.transactionDetail {
+  .container {
+    padding-bottom: 25px;
+  }
+  
+  &__head {
+    background: white;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    padding: 20px 25px;
+    position: relative;
+
+    .status {
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__body {
+    background: white;
+    padding: 25px;
+    padding-left: 100px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      width: 50px;
+      height: auto;
+    }
+
+    .content {
+      p {
+        margin-bottom: 20px;
+        span {
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .btn-orange {
+    margin-top: 15px;
+  }
+}

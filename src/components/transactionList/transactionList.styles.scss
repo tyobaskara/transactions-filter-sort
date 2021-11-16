@@ -1,0 +1,32 @@
+.transactions {
+  &__head {
+    padding: 0 15px;
+    margin-bottom: 20px;
+
+    h2 {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 20px 0;
+
+    li {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active {
+        opacity: .75;
+        transition: all .1s ease;
+      }
+    }
+  }
+}
