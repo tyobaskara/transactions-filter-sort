@@ -16,6 +16,8 @@ const SET_LOADING = 'SET_LOADING';
 //  setLoading: (payload) => dispatch(actions.setLoadingAction(payload))
 // })
 //
+// Or
+//
 // mapDispatchToProps = {
 //  setLoading: actions.setLoadingAction
 // }
