@@ -9,17 +9,19 @@ const GET_TRANSACTIONS = 'GET_TRANSACTIONS';
 const ERROR_TRANSACTIONS = 'ERROR_TRANSACTIONS';
 const SET_LOADING = 'SET_LOADING';
 
+// createAction(SET_LOADING)
+//
 // Container
 // mapDispatchToProps = dispatch => ({
-//  getTransactions: (res) => dispatch(actions.getTransactions(res))
+//  setLoading: (payload) => dispatch(actions.setLoadingAction(payload))
 // })
 //
 // mapDispatchToProps = {
-//  getTransactions: actions.getTransactions
+//  setLoading: actions.setLoadingAction
 // }
 //
 // Component
-// props.getTransactions('payload') equal to dispatch({ type: GET_TRANSACTIONS, payload: 'payload' });
+// props.setLoading(true) equal to dispatch({ type: SET_LOADING, payload: true });
 
 // Actions
 const getTransactionsAction = createAction(GET_TRANSACTIONS);
@@ -37,7 +39,8 @@ const getTransactions = () => async dispatch => {
 }
 
 export const actions = {
-  getTransactions
+  getTransactions,
+  setLoadingAction
 }
 
 // Initial State
