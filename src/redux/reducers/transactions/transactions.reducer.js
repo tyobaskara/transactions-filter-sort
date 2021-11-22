@@ -48,7 +48,7 @@ export const actions = {
 // Initial State
 const initialState = {
   data: [],
-  loading: false,
+  loading: true,
   error: ''
 };
 
