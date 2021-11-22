@@ -34,7 +34,6 @@ const getTransactions = () => async dispatch => {
   dispatch(setLoadingAction(true));
   const { data, error } = await transactionServices.getTransactions();
 
-  dispatch(setLoadingAction(false));
   if (error) return dispatch(errorTransactionsAction(error));
 
   dispatch(getTransactionsAction(data));

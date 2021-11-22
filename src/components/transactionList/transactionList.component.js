@@ -69,6 +69,7 @@ const TransactionListComponent = (props) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  console.log('transactions.loading', transactions.loading);
   if (transactions.loading) return <div className='container text-center' style={{ padding: '20px'}}>Loading....</div>;
   if (transactions.error) return <div className='container text-center' style={{ padding: '20px'}}>Error....</div>;
 
